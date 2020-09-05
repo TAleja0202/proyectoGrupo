@@ -1,0 +1,276 @@
+.body{
+    background:linear-gradient(30deg, rgb(2, 10, 34), rgb(60, 46, 85), rgb(75, 10, 75));
+    color: white;
+}
+
+#banner{
+    background:linear-gradient(30deg, rgb(37, 36, 36), rgb(0, 0, 0), rgb(46, 40, 46));
+    padding-bottom: 3px; 
+    height: 100%;
+    width: 100%;
+    display: flex;    
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+                    /* parte derplegable*/
+
+.nav1{
+    background:linear-gradient(30deg, rgb(37, 36, 36), rgb(0, 0, 0), rgb(46, 40, 46));
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu{
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 90px;
+}
+
+.menu li{
+    top: 10px;
+    flex-basis: 0;
+    flex-grow: 1;
+    border-right: 2px solid #363636;
+    position: relative;
+}
+
+.menu .first-item{
+    border-left: 2px solid #363636;
+}
+
+.menu li a{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.menu .img1{
+    position: absolute;
+    width: 0%;
+    right: 30px;
+    bottom: 0;
+    z-index: 20;
+}
+
+.menu li a .text-item{
+    height: 100%;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; 
+    position: absolute;
+    z-index: 10;
+}
+
+.menu li a .down-item{
+    color: rgba(0, 0, 0, 0.048);
+    position: absolute;    
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(30deg, rgb(37, 36, 36), rgb(0, 0, 0), rgb(46, 40, 46));
+    -webkit-transition: 5s ease;
+    -o-transition: .1s ease;
+    transition: .5s ease;
+}
+
+                    /* Efectos Hover*/
+
+.menu li:hover .down-item{
+    color: white;
+    top: 110%;
+    height: 170%;
+    animation: animate 1s linear forwards;
+    position: absolute;
+}
+ .menu li:hover .img1{
+     width:100%;
+     right: 0%;
+ }
+
+                                  /* los que ya tenia no tocar */
+
+#conte{
+padding-top: 100px;
+}
+
+#titulo{                  
+    text-align: center;
+    width:250px;
+    opacity: 0;
+    display: inline-block;
+    animation: animate 1s linear forwards;
+}
+
+#imagenes{
+    width:200px;
+    height:200px;
+    opacity: 0;
+    display: inline-block;
+    animation: animate 1s linear forwards;
+}
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0px);
+    }
+}
+
+p {
+    text-align: center;    
+}
+
+#button1{
+    background-color: rgb(73, 169, 233);
+    border-radius: 4px;
+    width: 100px;
+    height: 50px;         
+}
+
+
+
+
+
+Fooder  /* pie de pagina de Kmal */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;    
+}
+
+footer{
+    width: 100%;
+    background: black;
+    color: white;
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.column1{
+    max-width: 400px;
+}
+
+.column1 h1{
+    font-size: 20px;
+}
+
+.column1 p{
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.column2{
+    max-width: 400px;
+}
+
+.column2 h1{
+    font-size: 22px;
+}
+
+.row{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row img{
+    width: 36px;
+    height: 36px;
+}
+
+.row label{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.column3{
+    max-width: 400px;
+}
+
+.column3 h1{
+    font-size: 22px;
+}
+
+.row2{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row2 img{
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 150px;
+}
+
+.container-footer{
+    width: 100%;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.copyright{
+    color: white;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.information{
+   color: white;
+}
+
+.information{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1100px){
+    .container-body{
+        display: block;
+    }
+}
